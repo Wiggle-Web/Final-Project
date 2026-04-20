@@ -3,9 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
   <title>The Cosmere</title>
 </head>
 <body>
-  
+   <header>
+    <div class="container">
+      <main class="content">
+        <img src="images/Cosmere_symbol.svg" class="header-img" alt="">
+        <h1>The Cosmere</h1>
+      
+        <p class=""> Welcome to this fanmade cosmere fansite where you can find interesting facts about different characters in the worlds </p>
+      </div>
+      </main>
+    </header>
+<a href="Roshar.html">
+  <div class="feature-card" >
+  <div class="card-image">
+    <img src="images/roshar-reimagined-2-0-high-resolution-map-of-roshar-v0-p6v1khm021h81.webp" alt="Feature">
+  </div>
+
+
+  <div class="card-content">
+    <h3>Roshar</h3>
+    <p>This planet is well known for its ferocious storms and the books that are set on this planet include Stormlight archive, Edge Dancer, and Dawnshard. <p>
+  </div>
+
+</div>
+</a>
+<a href="Scadrial.html">
+<div class="feature-card">
+  <div class="card-image">
+    <img src="images/600px-Final_Empire_Map.jpg" alt="Feature">
+  </div>
+
+  <div class="card-content">
+    <h3>Scadrial</h3>
+    <p>Scadrial is a planet thats known by its red sun and lack of a moon the books that are set on this planet are mistborn era oen and mistborn era 2</p>
+  </div>
+
+</div>
+</a>
+<a href="Sel.html">
+<div class="feature-card">
+  <div class="card-image">
+    <img src="images/IMG_7998.jpg" alt="Feature">
+  </div>
+  <div class="card-content">
+    <h3>Sel</h3>
+    <p>This planet is known by its legendary city Elantris the books that take place on this planet are Elantris and The Emporers Soul</p>
+  </div>
+</div>
+</a>
+
+ 
+  <script>
+    const menu_toggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    menu_toggle.addEventListener('click', () => {
+
+    menu_toggle.classList.toggle('is-active');
+    sidebar.classList.toggle('is-active')
+    })
+
+  </script>
+
+
 </body>
 </html>
