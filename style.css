@@ -172,6 +172,7 @@ img{
   border-radius: 12px;
   background: #fff;
   margin: .5rem;
+  max-width: 98%;
 }
 
 .card-image {
@@ -196,7 +197,7 @@ img{
 }
 
 .feature-card:hover{
-  border: 2px black solid;
+  border: 5px black solid;
 }
 
 a{
