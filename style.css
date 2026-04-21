@@ -40,6 +40,9 @@ header{
   
 }
 
+
+
+
 img{
   float: left;
   margin-right: 20px;
@@ -51,7 +54,7 @@ img{
 .header-img{
    width: 200px;
    padding-right: 1rem;
-   ;
+   
 }
 .header-img-harmony{
   padding-right: 1rem;
@@ -105,11 +108,7 @@ a{
   font-size: larger;
   max-width: 50%;
 }
-@media (max-width: 1400px){
-  .information{
-    max-width: 100%;
-  }
-}
+
 
 
 
@@ -130,6 +129,7 @@ a{
   padding: .8rem;
 }
 
+
 .menu-item:hover{
   background-color: #005f4d;
   border-radius: 10px;
@@ -137,4 +137,49 @@ a{
 
 .World-Name{
   font-size: 150px;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 200px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container-cards{
+  padding: 2px 16px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  align-items: center;
+}
+
+@media (max-width: 1400px){
+  .information{
+    max-width: 100%;
+  }
+  .container-cards{
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+  }
+  .menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .header-img {
+    display: none;
+    
+  }
+}
+
+@media (max-width: 850px){
+  .menu{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
 }
