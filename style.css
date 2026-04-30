@@ -72,11 +72,13 @@ img{
   background: #fff;
   margin: .5rem;
   max-width: 98%;
+  max-height: 98%;
 }
 
 .card-image {
   flex: 0 0 50%; 
-  height: 100%;
+  height: 98%;
+  max-height: 98%;
 }
 
 .card-image img {
@@ -92,11 +94,12 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-y: auto; 
+  overflow-y: auto; ;
 }
 
 .feature-card:hover{
   border: 5px black solid;
+  
 }
 
 a{
@@ -142,7 +145,7 @@ a{
 .card{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.1s;
-  width: 200px;
+  width: 250px;
   border-radius: 10px;
   margin: 5px;
 }
@@ -155,7 +158,7 @@ a{
 
 .card:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1.5);
-  border: 5px solid black;
+  outline: 5px solid black;
   border-radius: 20px;
 }
 
@@ -164,6 +167,14 @@ a{
   display: grid;
   grid-template-columns: repeat(5,1fr);
   justify-items: center;
+  p{
+    white-space: nowrap;
+  }
+  h4{
+    white-space: nowrap;
+  }
+  
+
 }
 .long-name{
   display: grid;
@@ -226,6 +237,7 @@ a{
       display: flex;
       align-items: flex-start;
       gap: 20px;
+      flex: 1;
     }
     table.ch-infobox {
         width: 100%;
@@ -250,5 +262,56 @@ a{
     .main-img{
       margin-right: 2rem;
     }
+  
+footer{
+  
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  background-color: slategrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: absolute;
+  
+  img{
+    width: 100px;
+    
+    
+  }
+}
+
+footer a{
+  font-size: xx-large;
+  color: black;
+}
+footer a:hover{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5rem;
+  opacity: 60%;
+  
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 34%;
+  width: 100%;
+
+
+}
+
+.parent-conatiner{
+  position: relative;
+  min-height: 400px;
+}
+
+.content-not-reach{
+  
+    position: absolute;
+    bottom: 0;
+}
+
 
 
