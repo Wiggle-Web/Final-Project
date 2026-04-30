@@ -269,9 +269,9 @@ footer{
   align-items: center;
   height: 20vh;
   background-color: slategrey;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  position: absolute;
+  border-radius: 25px;
+
+  bottom: 0;
   
   img{
     width: 100px;
@@ -307,7 +307,9 @@ footer a:hover{
   min-height: 400px;
 }
 
-
+.link{
+  color: blue;
+}
 
 
 
